@@ -43,7 +43,7 @@ SELECT
  
  
 -- avg 함수 활용
--- round: 반올림, ceil: 올림, floor: 버림
+-- round: 반올림, ceil: 올림, floor: 버림/
 SELECT
 		 category_code
 	  , floor(AVG(menu_price))
