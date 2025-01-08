@@ -164,13 +164,19 @@ AND SALARY >= 2000000;
 SELECT
 		 *
   FROM department;
-
-
--- 1. 이름에 '형'자가 들어가는 직원들의 사번, 사원명, 부서명을 조회하시오.(1명) DEPT_ID
+  
 SELECT
-		 EMP_ID
-	  , EMP_NAME
-	  , 
+		 *
+  FROM employee;
+
+
+-- 1. 이름에 '형'자가 들어가는menudbmenudb 직원들의 사번, 사원명, 부서명을 조회하시오.(1명) DEPT_ID
+SELECT
+		 a.EMP_ID
+	  , a.EMP_NAME
+	  , b.DEPT_ID
+  FROM employee a
+ JOIN department b ON a.DEPT_ID = b.DEPT_ID
 	  
 	  
 
