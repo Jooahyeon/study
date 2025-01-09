@@ -168,24 +168,43 @@ SELECT
 SELECT
 		 *
   FROM employee;
+  
+SELECT
+		 *
+  FROM location;
+  
+SELECT
+		 *
+  FROM national;
+  
 
 
--- 1. 이름에 '형'자가 들어가는menudbmenudb 직원들의 사번, 사원명, 부서명을 조회하시오.(1명) DEPT_ID
+-- 1. 이름에 '형'자가 들어가는 직원들의 사번, 사원명, 부서명을 조회하시오.(1명) DEPT_ID
 SELECT
 		 a.EMP_ID
 	  , a.EMP_NAME
-	  , b.DEPT_ID
+	  , b.DEPT_TITLE
   FROM employee a
- JOIN department b ON a.DEPT_ID = b.DEPT_ID
-	  
-	  
-
-
+ JOIN department b ON a.DEPT_CODE = b.DEPT_ID
+WHERE a.EMP_NAME LIKE '%형%';
 
 -- 2. 해외영업팀에 근무하는 사원명, 직급명, 부서코드, 부서명을 조회하시오.(9명)
+SELECT
+		  a.EMP_NAME
+	   , a.JOB_CODE 
+	   , b.DEPT_ID
+	   , b.DEPT_TITLE
+  FROM employee a
+ JOIN department b ON a.DEPT_CODE = b.DEPT_ID
+ WHERE location_id IN ('L2', 'L3','L4');
 
 
 -- 3. 보너스포인트를 받는 직원들의 사원명, 보너스포인트, 부서명, 근무지역명을 조회하시오.(8명)(INNER JOIN 결과)
+SELECT
+		 a.EMP_NAME
+	  , a.BONUS
+	  , 
+
 
 
 -- 4. 부서코드가 D2인 직원들의 사원명, 직급명, 부서명, 근무지역명을 조회하시오.(3명)
