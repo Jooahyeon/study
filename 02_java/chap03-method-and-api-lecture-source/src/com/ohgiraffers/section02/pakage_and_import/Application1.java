@@ -1,0 +1,28 @@
+package com.ohgiraffers.section02.pakage_and_import;
+
+public class Application1 {
+    public static void main(String[] args) {
+
+        /* 수업목표. 패키지에 대해 이해할 수 있다. */
+        /* 설명
+         *  패키지의 의미
+         *  1. 클래스의 소속
+         *  2. 원래는 클래스명의 일부분이다.
+         *  3. 경우에 따라 생략 가능하다.
+        * */
+
+        /* 설명. non=static 메소드 호출을 위해 Calculator 인지 (feat. 다른 패키지에서) */
+        com.ohgiraffers.section01.method.Calculator cal
+                = new com.ohgiraffers.section01.method.Calculator();
+                // 다른 패키지의 내용을 가져올거라 풀네임으로 적어야 함.
+        int plusResult = cal.plusTwoNumbers(100, 20);
+        System.out.println("100과 20의 합: " + plusResult);
+
+        /*설명. static 메소드 호출 해보기(feat. 다른 패키지에서)*/
+        int maxResult = com.ohgiraffers.section01.method.Calculator.maxNumberOf(100, 20);
+        // static 메소드를 호출하려면 소속되어있는 풀네임을 써서 인지시켜야 한다.
+        System.out.println("두 수 중 큰 값은? " + maxResult);
+
+
+    }
+}
