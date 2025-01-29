@@ -8,8 +8,6 @@ public class Application2 {
         객체파트에서 다시 다룰 것
          */
 
-
-
         System.out.println("main() 시작됨 ...");
 
         /*설명. non-static 메소드인 경우 메소드를 new 연산자로 인지시켜 호출할 수 있다. */
