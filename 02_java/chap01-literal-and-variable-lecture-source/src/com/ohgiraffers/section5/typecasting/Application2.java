@@ -14,7 +14,7 @@ public class Application2 {
 
         /*설명. 실수형 자료형 -> 정수형 자료형으로 강제 형변환하면 의도적으로 소수점 이하를 제거할 수 있다.*/
         float avg = 31.235f;
-        int floorNum(int)avg;
+        int floorNum = (int)avg;
         System.out.println("floorNum = " + floorNum);
 
     }

@@ -30,7 +30,7 @@ public class Application1 {
 
         System.out.println();       // 공백 한 줄 추가
 
-        //한 줄 주석 단축키...
+        //한 줄 주석 단축키 Ctrl + /
         // int point = 100;
         int point = 200;            // 쉽게 포인트 수정 가능(재사용을 통한 유지보수 향상)
         System.out.println("1번 고객 포인트를 " + point + "포인트 지급하였습니다.");
