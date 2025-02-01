@@ -20,7 +20,7 @@ public class ArrayEx1 {
         for (int i = 0; i < students.length; i++) {
             total += students[i];
         }
-        double avg = total / students.length;
+        double avg = (double)total / students.length;
         System.out.println("점수 총합: " + total);
         System.out.println("점수 평균: " + avg);
     }

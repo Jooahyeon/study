@@ -12,6 +12,7 @@ public class EnhancedFor {
         }
         //iter (for each문 단축키)
         //향상된 for문, for-each문
+        // for (변수 : 배열 또는 컬렉션) {
         for (int number : numbers) {
             System.out.println(number);
         }
