@@ -18,10 +18,10 @@ public class TimeConverter {
      * @return "시:분:초" 형식의 문자열
      */
     public String convertSeconds(int seconds) {
-        int minutes = seconds / 60;
-        int hours = minutes / 60;
-
-        String s = (hours + ":시" + (minutes-seconds/hours) + ":분" + seconds +":초");
+        int hours = seconds / 3600 ;
+        int minutes = (seconds % 3600) / 60;
+        int reSeconds = seconds % 60;
+        String s = (hours + "시:" + minutes + "분:" + reSeconds +"초");
         // 여기에 코드 작성(return 구문도 수정 필요하면 수정)
         return s;
     }
