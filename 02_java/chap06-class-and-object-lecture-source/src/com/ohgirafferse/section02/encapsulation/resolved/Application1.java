@@ -2,11 +2,11 @@ package com.ohgirafferse.section02.encapsulation.resolved;
 
 public class Application1 {
     public static void main(String[] args) {
-        Monster moster = new Monster();
+        Monster monster = new Monster();
 //        monster.name = "드라큘라";
 //        monster.hp = 1000;
-//        monster.setInfo1("드라큘라");
-//        monster.setInfo2(1000);
+        monster.setInfo1("드라큘라");
+        monster.setInfo2(1000);
 
         /*설명.
         *  캡슐화(Encapsulation)이란?
