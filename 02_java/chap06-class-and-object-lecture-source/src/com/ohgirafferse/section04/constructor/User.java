@@ -11,10 +11,11 @@ import java.util.Date;
 
         /* 설명. 기본 생성자(매개변수가 없는)를 활용한 객체 생성(반드시 명시적으로 쓰자!) */
         public User() {
+            this.id = "12";
             System.out.println("기본 생성자 호출");
         }
 
-        /*설명. 원하는 필드를 초기화 하기 위한 매개변수 있는 생서아를 활용해 객체를 생성할 수 있다. */
+        /*설명. 원하는 필드를 초기화 하기 위한 매개변수 있는 생성자를 활용해 객체를 생성할 수 있다. */
         public User(String name, String pwd, String id) {
             System.out.println("매개변수 있는 생성자 호출");
 
