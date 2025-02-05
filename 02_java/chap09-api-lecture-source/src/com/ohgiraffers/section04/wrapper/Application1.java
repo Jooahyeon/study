@@ -7,7 +7,7 @@ public class Application1 {
 
 
         /* 설명. 기본자료형을 Wrapper클래스 자료형으로 변환할 수 있다(박싱, boxing) */
-        Integer autoBoxingInt = 20;                                 // 오토 박싱(auto - boxing)
+        Integer autoBoxingInt = 20;                                 // 오토 박싱(auto - boxing) 20-> 주소로
         Integer boxingInt2 = Integer.valueOf(intValue);        // 정석
 
 
@@ -34,7 +34,7 @@ public class Application1 {
 
         /* 설명. int -> Integer(오토박싱) -> Object(다형성) */
         /* 설명. 출력 -> Object의 toString()에서 Integer의 toString()(동적바인딩)이 실행 됨.*/
-        System.out.println("obj: " + obj);
+        System.out.println("obj: " + obj.toString());
 //        System.out.println("obj: " + ((String)obj));
 
 

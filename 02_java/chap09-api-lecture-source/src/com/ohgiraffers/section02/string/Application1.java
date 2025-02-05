@@ -5,6 +5,7 @@ public class Application1 {
         /* 수업목표. String 클래스의 자주 사용하는 메소드에 대해 이해할 수 있다. */
         /* 목차. 1. charAt()*/
         //char ch = sc.nextLine().charAt(0);            sc.nextLine() = new String("홍") -> 둘다 힙 영역에 생김
+        //ㅁ
 
         String str1 = "apple";
 
@@ -12,7 +13,7 @@ public class Application1 {
             System.out.println("charAt(" + i + ") = " + str1.charAt(i));
         }
 
-        /* 목차. 2. compareTo() */
+        /* 목차. 2. compareTo()_맨앞자리로 서로 얼마나 떨어져 있는지를 출력 */
         String str2 = "java";
         String str3 = "java";
         String str4 = "JAVA";
