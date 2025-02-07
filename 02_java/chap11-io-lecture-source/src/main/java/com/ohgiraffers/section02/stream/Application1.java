@@ -7,6 +7,7 @@ import java.io.IOException;
 public class Application1 {
     public static void main(String[] args) {
         /* 수업목표. FileInputStream을 이해할 수 있다 */
+
         FileInputStream fis = null;
 
         try {
@@ -23,7 +24,6 @@ public class Application1 {
             while((input = fis.read()) != -1 ){
                 System.out.println((char)input);
             }
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
