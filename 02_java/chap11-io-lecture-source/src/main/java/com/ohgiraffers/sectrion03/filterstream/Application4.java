@@ -1,6 +1,6 @@
 package com.ohgiraffers.sectrion03.filterstream;
 
-import com.ohgiraffers.sectrion03.filterstream.dto.MemberDTO;
+import com.ohgiraffers.sectrion03.filterstream.dto2.MemberDTO;
 
 import java.io.*;
 
@@ -42,7 +42,7 @@ public class Application4 {
         }
         //읽어들임 (조회)
 
-        MemberDTO newMemArr = new MemberDTO(memArr.length);
+        MemberDTO[] newMemArr = new MemberDTO[memArr.length];
 
         ObjectInputStream ois = null;
         try{

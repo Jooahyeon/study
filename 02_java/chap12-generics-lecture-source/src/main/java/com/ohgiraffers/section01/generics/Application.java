@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.generics;
 
+import java.util.ArrayList;
+
 public class Application {
     public static void main(String[] args) {
         /* 수업목표. 제네릭에 대해 이해할 수 있다 */
@@ -20,10 +22,9 @@ public class Application {
         double dNum = (Double)mgt.getValue();//T. 컴파일 에러가 아닌 런타임 에러가 발생하는 위험한 구문(자료형이 안전하지 않음)
         //주소값을 값을 넣는 곳에 넣을 수 없어 다운캐스팅함 (수동으로 해줘야 해) -> 번거로움
 
-        GenericTest<Double> gt1 = new GenericTest<>(); // 다이아몬드 연산자는 한 번마 ㄴ타입까지 작성하면 된다.
-        gt1.getValue();     // T. 다이아몬드연산자 안의 참조자료형을 반환하게 되는 것을 확인할 수 있다.
+        GenericTest<Integer> gt1 = new GenericTest<>(); // 다이아몬드 연산자는 한 번만 타입까지 작성하면 된다.
+        gt1.getValue();     // T. 다이아몬드연산자 안의 참조자료형을 반환하게 되는 것을 확인할 수 있다. 필터링의 개념
 //        gt1.setValue(1);    // T. 타입의 안전성이 높다(=컴파일에러를 띄워준다, 다이아몬드연산자 안 참조자료형을 위반하지 않는다)
-
 
         /*설명.
         *  제네릭 클래스는 다양한 자료형으로 변환할 수 있어 클래스 하나만으로 활용가치가 높아진다 (구현의 편의성)

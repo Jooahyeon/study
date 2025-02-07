@@ -12,6 +12,7 @@ public class GenericTest<T> {
     //제네릭활용
     //객체 생성 시 타입 지정
     private T value;
+    private String value2;
 
     public GenericTest() {
 

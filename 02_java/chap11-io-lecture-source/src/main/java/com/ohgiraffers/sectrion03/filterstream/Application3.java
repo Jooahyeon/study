@@ -53,7 +53,7 @@ public class Application3 {
                 System.out.println(dis.readChar());
             }
         } catch (EOFException e) {                          //마지막을 만날 시점 처리 = EOF처리(방법은 다 다름)
-
+            //while무한루프가 돌기때문에 파일을 끝까지 읽었을 때 루프를 종료하도록 도와주는 예외(객체단위로 불러오니께 )
             /*설명. data 단위 입출력은 EOF를 EOFException 처리를 통해 확인하고 처리할 수 있다. */
 
             System.out.println("데이터 파일 읽기 완료");
