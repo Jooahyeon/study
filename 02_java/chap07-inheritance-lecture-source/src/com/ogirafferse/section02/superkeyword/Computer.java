@@ -8,8 +8,19 @@ public class Computer extends Product {
     private int ram;
     private String operatingSystem;
 
+    public Computer() {
+        super();
+    }
 
-    public Computer(String code, String brand, String name, int price, Date manufactureDate) {
+    public Computer(String cpu, int hdd, int ram, String operatingSystem) {
+        super();
+        this.cpu = cpu;
+        this.hdd = hdd;
+        this.ram = ram;
+        this.operatingSystem = operatingSystem;
+    }
+
+    public Computer(String code, String brand, String name, int price, Date manufactureDate, String cpu, int hdd, int ram, String operatingSystem) {
         super(code, brand, name, price, manufactureDate);
         this.cpu = cpu;
         this.hdd = hdd;
@@ -62,6 +73,6 @@ public class Computer extends Product {
                 ", hdd=" + hdd +
                 ", ram=" + ram +
                 ", operatingSystem='" + operatingSystem + '\'' +
-                "} " + super.get();
+                "} " + super.getCode() + super.getBrand();
     }
 }

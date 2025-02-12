@@ -1,4 +1,4 @@
-package com.ohgiraffers.sectrion03.filterstream.dto2;
+package com.ohgiraffers.section03.filterstream.dto;
 
 import java.io.Serializable;
 

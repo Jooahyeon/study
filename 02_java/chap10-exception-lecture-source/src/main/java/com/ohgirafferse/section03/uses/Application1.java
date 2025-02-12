@@ -37,7 +37,6 @@ public class Application1 {
                  *  입출력에서 사용한 스트림(통로)을 닫아주는 용도의 메소드이다
                  *   스트림이 없을 때 (null)을 고려하고 IOException을 처리해야 제대로 쓸 수 있다.
                  * */
-                br.close();
             } catch(IOException e) {
                 throw new RuntimeException(e);
             }

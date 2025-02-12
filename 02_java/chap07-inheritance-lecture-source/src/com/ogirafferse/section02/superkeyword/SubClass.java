@@ -1,4 +1,6 @@
-package com.ogirafferse.section03.overriding;
+package com.ogirafferse.section02.superkeyword;
+
+import com.ogirafferse.section03.overriding.SuperClass;
 
 public class SubClass extends SuperClass {
     /* 설명. 부모 메소드의 헤드부와 일치하게 오버라이딩 */
@@ -37,6 +39,6 @@ public class SubClass extends SuperClass {
     public void protectedMethod() {}        // 더 큰 범위로 접근 제어자 바꾸는 건 성립
 
     /* 설명. 다른 패키지가 되면 오버라이딩 불가 */
-    @Override
-    void defaultMethod() {}
+//    @Override
+//    void defaultMethod() {}
 }

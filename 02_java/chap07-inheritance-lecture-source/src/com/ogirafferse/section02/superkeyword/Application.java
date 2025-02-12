@@ -11,17 +11,18 @@ public class Application {
         Product product1 = new Product();
         System.out.println(product1);
 
-        Product product2 = new Product("p01", "플레이데이터", "자바", 100, new java.util.Date());
+        Product product2 = new Product("p01", "플레이데이터", "자바", 1000, new java.util.Date());
         System.out.println(product2);
 
         Computer computer1 = new Computer();
         System.out.println(computer1);
 
-        Computer computer2 = new Computer("퀠컴 스냅드래곤", 512, 16, "안드로이드");
+        Computer computer2 = new Computer("퀄컴 스냅드래곤", 512, 16, "안드로이드");
         System.out.println(computer2);
 
         Computer computer3 = new Computer("p02", "구글", "픽셀", 1000000, new java.util.Date()
-                , "퀄컴 스냅드래곤", 102);
+                , "퀄컴 스냅드래곤", 1024, 32, "윈도우");
+        System.out.println(computer3);
 
     }
 }

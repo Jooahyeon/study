@@ -1,6 +1,6 @@
-package com.ohgiraffers.sectrion03.filterstream;
+package com.ohgiraffers.section03.filterstream;
 
-import com.ohgiraffers.sectrion03.filterstream.dto2.MemberDTO;
+import com.ohgiraffers.section03.filterstream.dto2.MemberDTO;
 
 import java.io.*;
 

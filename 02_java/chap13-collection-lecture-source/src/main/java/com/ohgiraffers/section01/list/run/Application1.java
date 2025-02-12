@@ -1,8 +1,6 @@
 package com.ohgiraffers.section01.list.run;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -74,7 +72,34 @@ public class Application1 {
 //            System.out.print(Arr[0] + Arr[1] + Arr[i]);}
         int index = 1;
         int[] newIntArr = new int[intArr.length + 1];
-        System.array;
+
+        /* 설명. ArrayList를 활용한 정렬 */
+        /* 목차 1. 문자열 데이터 정렬(feat.오름차순) */
+//        List<String> stringList = new ArrayList<>();      // d오름차순만 가능!
+        List<String> stringList = new LinkedList<>();       // 내림차순할거면 이걸로!
+        //내림차순 할때는 LinkedList로 변경(형제라 가능)
+        stringList.add("apple");
+        stringList.add("orange");
+        stringList.add("banana");
+        stringList.add("mango");
+        stringList.add("grape");
+
+        System.out.println("문자열 데이터: " + stringList);
+
+        /*설명. 실제로는 ArrayList 안에 있는 데이터인 String에 정의된 기준(오름차순)대로 정렬 됨 */
+        Collections.sort(stringList);
+        System.out.println("정렬된 문자열 데이터: " + stringList);
+
+        /*목차 1-1. 문자열 데이터 내림차순 정렬 */
+        /*설명. 다루는 Iterator와 해당 컬렉션의 제네릭 타입은 왠만하면 꼭 명시하자.
+        *  (feat. 다운캐스팅 방지(타입안전성)위함)*/
+        Iterator<String> iter = ((LinkedList<String>) stringList).descendingIterator();
+        //descendingIterator(Deque소속)-> linkedList만 꺼내 쓸 수 있음
+        while(iter.hasNext()) {
+            System.out.println(iter.next());
+        }
+
+
 
     }
 }
