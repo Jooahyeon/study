@@ -161,7 +161,7 @@ public class Application {
     /* 설명. 회원 번호를 입력 받아 int로 반환하는 메소드 */
     private static int chooseMemNo() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("회원 번호를 입력하세요: ");
+        System.out.print("회원 번호를 입력하세요: ");
         return sc.nextInt();
     }
 }
