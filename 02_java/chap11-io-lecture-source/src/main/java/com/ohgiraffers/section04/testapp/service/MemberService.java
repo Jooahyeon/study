@@ -44,6 +44,8 @@ public class MemberService {
         /* 설명. 2. 회원 활성화 상태 추가 */
         member.setAccountStatus(AccountStatus.ACTIVE);
 
+
+
         /*설명. 모든 DML작업(Insert/Update/Delete)이 일어난 행(객체)의 갯수 */
         int result = mr.insertMember(member);
 //        System.out.println("insert 성공 실패 여부: " + result);
@@ -53,18 +55,17 @@ public class MemberService {
         } else {
             System.out.println("회원가입에 실패하였습니다.");
         }
-
     }
 
     public Member findMemberForMod(int memNo) {
-        Member selectedMember = mr.selectMemberBy(memNo);       //사본
+        Member selectedMember = mr.selectMemberBy(memNo);    // 원본
 
         if (selectedMember != null) {           // 해당 회원이 조회되었을 때
 
             /*설명. 조회된 회원을 그대로 반환해서 수정하면 Repository의 컬렉션에 담긴 객체가 수정된다 */
             /*설명. 따라서 우리는 사본의 개념을 만들어 Repository의 컬렉션이 오염되지 않도록 할 것임 */
 
-            Member newInstance = new Member();      //원본
+            Member newInstance = new Member();    //사본
             newInstance.setMemNo(selectedMember.getMemNo());
             newInstance.setId(selectedMember.getId());
             newInstance.setPwd(selectedMember.getPwd());

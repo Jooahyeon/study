@@ -100,6 +100,7 @@ public class MemberRepository {                 //객체가 생성되지마자  
          }
 
          //첫 헤더 제외하고 더이상 헤더가 붙지 않고 스트림이 날아가도록 만듬
+         //디비저장
          public int insertMember(Member member) {
              /* 설명. 헤더가 추가되지 않는 ObjectOutputStream 클래스 정의(MyObjectOutputStream) */
              MyObjectOutput moo = null;

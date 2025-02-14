@@ -61,27 +61,26 @@ public class Application {
             sc.nextLine();          // 버퍼의 개행 제거용
             switch (chooseNo) {
                 case 1:
-                    System.out.println("수정 할 패스워드를 입력하세요.");
+                    System.out.print("수정 할 패스워드를 입력하세요.");
                     modifyMember.setPwd(sc.nextLine());
                     break;
                 case 2:
-                    System.out.println("수정 할 나이를 입력하세요: ");
+                    System.out.print("수정 할 나이를 입력하세요: ");
                     modifyMember.setPwd((sc.nextLine()));
                     break;
                 case 3:
-                    System.out.println("수정 할 취미를 입력하세요: ");
+                    System.out.print("수정 할 취미를 입력하세요: ");
                     modifyMember.setHobbies(resetHobbies());            //배열은 단순 Scanner로 입력 X / resetHobbies()라는 보조메뉴 생성
                     break;
                 case 4:
-                    System.out.println("수정 할 혈액형을 입력하세요: ");
+                    System.out.print("수정 할 혈액형을 입력하세요: ");
                     modifyMember.setBloodType(resetBloodType());        // enum은 단순 Scanner로 입력 X
-
                     break;
                 case 9:
-                    System.out.println("메인 메뉴로 돌아갑니다.");
+                    System.out.print("메인 메뉴로 돌아갑니다.");
                     return modifyMember;                                //내가 수정한 내용만 수정되고 수정되지 않은것은 그대로 반환
                 default:
-                    System.out.println("번호를 다시 제대로 입력해주세요.");
+                    System.out.print("번호를 다시 제대로 입력해주세요.");
             }
 
         }
