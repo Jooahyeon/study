@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7223fca-3863-43cb-bfbe-b5797c9ec3b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap02/variable/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap03/Operator/Exercise9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hygge/jungsuk/chap04/Exercise9.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2sxjcb72AbYNvoL5KzlsFl8fgZz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build javastudy-ex.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javastudy-ex [:com.hygge.jungsuk.Chap02.Variable.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javastudy-ex [:com.hygge.jungsuk.chap03.Operator.Exercise1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javastudy-ex [:com.hygge.jungsuk.chap03.Operator.Exercise2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javastudy-ex [:com.hygge.jungsuk.chap03.Operator.Exercise3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javastudy-ex [:com.hygge.jungsuk.chap04.Exercise11.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javastudy-ex [:com.hygge.jungsuk.chap04.Exercise9.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/smallpj/Mini_Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Exercise11">
+    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hygge.jungsuk.chap03.Operator.Exercise1" />
+      <module name="javastudy-ex.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hygge.jungsuk.chap03.Operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hygge.jungsuk.chap04.Exercise11" />
+      <module name="javastudy-ex.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hygge.jungsuk.chap04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hygge.jungsuk.chap03.Operator.Exercise2" />
+      <module name="javastudy-ex.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hygge.jungsuk.chap03.Operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hygge.jungsuk.chap03.Operator.Exercise3" />
+      <module name="javastudy-ex.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hygge.jungsuk.chap03.Operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hygge.jungsuk.chap04.Exercise9" />
+      <module name="javastudy-ex.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hygge.jungsuk.chap04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Exercise11" />
+        <item itemvalue="Application.Exercise9" />
+        <item itemvalue="Application.Exercise3" />
+        <item itemvalue="Application.Exercise2" />
+        <item itemvalue="Application.Exercise1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7223fca-3863-43cb-bfbe-b5797c9ec3b1" name="Changes" comment="" />
+      <created>1739404202805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739404202805</updated>
+      <workItem from="1739404203667" duration="5559000" />
+      <workItem from="1739442180834" duration="7597000" />
+      <workItem from="1739490945546" duration="9000000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
