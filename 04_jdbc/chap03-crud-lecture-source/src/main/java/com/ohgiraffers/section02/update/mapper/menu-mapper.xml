@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="insertMenu">   // key 쿼리를 달아주고 이름을 달아주는 것, 세미콜론 찍지 마라
+        INSERT
+          INTO TBL_MENU
+        (
+          MENU_NAME
+        , MNEU_PRICE
+        , CATEGORY_CODE
+        . ORDERABLE_STATUS
+        )
+        VALUES
+        (
+          ?
+        , ?
+        , ?
+        , ?
+        )
+    </entry>
+</properties>

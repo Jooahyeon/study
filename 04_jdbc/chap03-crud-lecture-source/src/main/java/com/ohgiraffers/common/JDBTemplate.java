@@ -1,4 +1,4 @@
-package com.ohgiraffers.section02.template;
+package com.ohgiraffers.common;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,13 +6,13 @@ import java.sql.*;
 import java.util.Properties;
 
 // 외부 리소스에서 커넥션을 만들어 반환함(close하면 안됨! 살아있는 connection을 줘야 함)
-public class JDBCTemplate {
+public class JDBTemplate {
     public static Connection getConnection() {                                  //모듈화
         Properties prop = new Properties();
         Connection con = null;
 
         try {
-            prop.load(new FileReader("src/main/java/com/ohgiraffers/section01/connection/jdbc-config.properties")
+            prop.load(new FileReader("src/main/java/com/ohgiraffers/config/connection-info.properties")
             );
             String driver = prop.getProperty("driver");
             String url = prop.getProperty("url");
@@ -22,6 +22,10 @@ public class JDBCTemplate {
             Class.forName(driver);
             con = DriverManager.getConnection(url, user, password);
             System.out.println("con = " + con);
+
+            /* 설명. DML(i, u, d)실행 시 커밋 수동 설정(우리가 제거해, 자동모드를 수동모드로) */
+            con.setAutoCommit(false);
+
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -43,4 +47,42 @@ public class JDBCTemplate {
         }
     }
 
+    public static void close(Statement stmt) {
+        try {
+            if(stmt != null) stmt.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void close(ResultSet rset) {
+        try {
+            if(rset != null) rset.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void commit(Connection con) {
+        try {
+           if(con != null) con.commit();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    public static void rollback(Connection con) {
+        try {
+            if(con != null) con.rollback();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+
+
+
 }
+
