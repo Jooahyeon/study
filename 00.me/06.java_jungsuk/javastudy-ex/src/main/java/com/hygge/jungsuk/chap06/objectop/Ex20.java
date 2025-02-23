@@ -1,4 +1,4 @@
-package com.hygge.jungsuk.chap06.objectop;
+package main.java.com.hygge.jungsuk.chap06.objectop;
 
 public class Ex20 {
     // 정답 풀이(답지)

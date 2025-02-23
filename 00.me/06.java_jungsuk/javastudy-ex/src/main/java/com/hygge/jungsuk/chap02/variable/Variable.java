@@ -1,4 +1,4 @@
-package com.hygge.jungsuk.chap02.variable;
+package main.java.com.hygge.jungsuk.chap02.variable;
 
 public class Variable {
     public static void main(String[] args) {

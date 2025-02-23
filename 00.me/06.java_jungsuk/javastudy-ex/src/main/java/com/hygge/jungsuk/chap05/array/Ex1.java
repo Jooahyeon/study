@@ -1,4 +1,4 @@
-package com.hygge.jungsuk.chap05.array;
+package main.java.com.hygge.jungsuk.chap05.array;
 
 public class Ex1 {
     public static void main(String[] args) {

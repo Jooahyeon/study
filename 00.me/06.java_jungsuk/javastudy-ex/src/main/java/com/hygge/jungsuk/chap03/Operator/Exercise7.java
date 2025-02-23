@@ -1,4 +1,4 @@
-package com.hygge.jungsuk.chap03.Operator;
+package main.java.com.hygge.jungsuk.chap03.Operator;
 
 public class Exercise7 {
     public static void main(String[] args) {

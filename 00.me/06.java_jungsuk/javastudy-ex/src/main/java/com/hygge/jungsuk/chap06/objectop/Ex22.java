@@ -1,4 +1,4 @@
-package com.hygge.jungsuk.chap06.objectop;
+package main.java.com.hygge.jungsuk.chap06.objectop;
 
 public class Ex22 {
 //    <내 풀이>
