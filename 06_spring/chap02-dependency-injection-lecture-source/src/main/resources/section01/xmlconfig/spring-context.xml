@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- beans안에 bean들을 넣는 구조! -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+      http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- pA콩을 Memberdto에 넣는 작업. balance 객체만 생성해도 기본 값은 0으로 출발함 -->
+    <bean id="account" class="com.ohgiraffers.common.PersonalAccount">
+        <constructor-arg index ="0" value="20"/>
+        <constructor-arg index ="1" value="110-234-567886"/>
+    </bean>
+
+<!--    1. 생성자 주입(순서가 상관없음. 똑똑한 콩장수야!) (주입 할 때 해당 방식을 선호함)_각 객체(생성자) 값을 부여함 -->
+<!--    <bean id="member" class="com.ohgiraffers.common.MemberDTO">-->
+<!--        <constructor-arg name="sequence" value="1"/>-->
+<!--        <constructor-arg name="name" value="홍길동"/>-->
+<!--        <constructor-arg name="email" value="hong@gmail.com"/>-->
+<!--        <constructor-arg name="phone" value="010-1234-5678"/>-->
+<!--        <constructor-arg name="personalAccount" ref="account"/>-->
+<!--   DI발생 (ref="account" , 콩이 의존관계가 됨) , 생성자의 매개변수를 활용해 다른 의존 관계의 콩을 넣어둠-->
+<!--    </bean>-->
+
+<!--    2. 세터(setter) 주입(캡슐화의 의미가 없기에 안쓰는 방식으로 가는게 좋음)-->
+    <bean id="member" class="com.ohgiraffers.common.MemberDTO">
+    <property name="sequence" value="1"/>
+    <property name="name" value="홍길동"/>
+    <property name="phone" value="010-1234-5678"/>
+    <property name="email" value="hong@gamil.com"/>
+    <property name="personalAccount" ref="account"/>
+<!-- ref에서 콩이 콩을 참조함을 나타냄 -->
+        </bean>
+
+</beans>

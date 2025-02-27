@@ -4,7 +4,7 @@ import com.ohgiraffers.common.MemberDTO;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+@Configuration("config1")
 public class ContextConfiguration {
 
     @Bean("member")
