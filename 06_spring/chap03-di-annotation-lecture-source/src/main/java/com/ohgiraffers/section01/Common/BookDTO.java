@@ -1,6 +1,7 @@
 package com.ohgiraffers.section01.Common;
 
 import lombok.*;
+import org.springframework.stereotype.Service;
 
 @NoArgsConstructor
 @AllArgsConstructor
