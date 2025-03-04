@@ -30,11 +30,7 @@ public class ContextConfiguration {
 
 
         /* 설명. 생성자 주입 */
-        return new MemberDTO(1, "홍길동", "010-2345-6789","hong@gamil",accountGenerator())
-
-
-
-
+        return new MemberDTO(1, "홍길동", "010-2345-6789","hong@gamil",accountGenerator());
 
 
     }
