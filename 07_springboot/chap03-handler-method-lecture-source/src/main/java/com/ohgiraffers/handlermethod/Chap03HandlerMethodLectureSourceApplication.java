@@ -1,13 +1,13 @@
-package com.ohgiraffers.chap01;
+package com.ohgiraffers.handlermethod;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Chap01AutoConfigurationLectureSourceApplication {
+public class Chap03HandlerMethodLectureSourceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Chap01AutoConfigurationLectureSourceApplication.class, args);
+		SpringApplication.run(Chap03HandlerMethodLectureSourceApplication.class, args);
 	}
 
 }
