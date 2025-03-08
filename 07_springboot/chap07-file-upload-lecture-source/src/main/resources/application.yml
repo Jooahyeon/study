@@ -1,0 +1,11 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB             # 파일 한 개당
+      max-request-size: 10MB          # 요청 당(파일이 여러개라도)
+  web:
+    resources:
+      static-location: file:///Users/AHyeon/Documents/uploadFiles   # /경로를 뜻함
+
+
+    filePath: "/Users/AHyeon/Documents/uploadFiles"

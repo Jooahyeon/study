@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>파일 업로드하기</h1>
+    <h3>single file 업로드</h3>
+
+<!--    파일을 업로드하는 요청의 MINE 타입은 multipart/form-data로 해야 서버에서 MultipartFile로 받을 수 있다. -->
+    <form action="single-file", enctype="multipart/form-data">
+        파일: <input type="file" name ="singleFile"><br>
+        파일 설명: <input type="text" name="singleFileDescription"><br>
+        <input type="submit" value="업로드">
+    </form>
+
+    <h3>multi file 업로드</h3>
+    <form action="multi-file" method="post" enctype="multipart/form-data">
+        파일: <input type="file" name ="multiFiles" multiple><br>
+        파일 설명: <input type="text" name="multiFileDescription"><br>
+        <input type="submit" value="업로드">
+    </form>
+
+
+</body>
+</html>

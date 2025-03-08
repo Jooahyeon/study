@@ -22,10 +22,9 @@ public class MethodMappingTestController {
         return "mappingResult";         // view의 이름이 됨(SSR?)
     }
 
-
     @RequestMapping(value = "/menu/modify", method = RequestMethod.POST)
     public String modifyMenu(Model model) {
-        model.addAttribute("message", "POST방식의 메뉴 수정용 핸들러 메소드 호출함..");
+        model.addAttribute("message",  "POST방식의 메뉴 수정용 핸들러 메소드 호출함..");
 
         return "mappingResult";
     }
