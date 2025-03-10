@@ -60,6 +60,7 @@ public class StopwatchInterceptor implements HandlerInterceptor {
         return true;
     }
 
+    //핸들러메소드 후
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
 
@@ -73,7 +74,7 @@ public class StopwatchInterceptor implements HandlerInterceptor {
 
     }
 
-    //핸들러 후
+    //핸들러 완성
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         HandlerInterceptor.super.afterCompletion(request, response, handler, ex);

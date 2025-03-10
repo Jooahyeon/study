@@ -13,8 +13,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfiguration implements WebMvcConfigurer {
     //WebMvcConfigurer 여기서 인터셉터를 등록할거여서 WebConfiguration 만들어둠
 
+    // 객체 생성
     private StopwatchInterceptor stopwatchInterceptor;
 
+    // 생성자 주입받음
     @Autowired
     public WebConfiguration(StopwatchInterceptor stopwatchInterceptor) {
         this.stopwatchInterceptor = stopwatchInterceptor;
