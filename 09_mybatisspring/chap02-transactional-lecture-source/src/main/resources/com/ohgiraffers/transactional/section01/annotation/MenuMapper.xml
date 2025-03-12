@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ohgiraffers.transactional.section01.annotation.MenuMapper">
+    <resultMap type="com.ohgiraffers.mybatisspring.section01.annotation.menu" id="menuResultMap">
+        <id property="menuCode" column="MENU_CODE"/>
+        <result property="menuName" column="MENU_NAME"/>
+        <result property="menuPrice" column="MENU_PRICE"/>
+        <result property="categoryCode" column="CATEGORY_CODE"/>
+        <result property="orderableStatus" column="ORDERABLE_STATUS"/>
+    </resultMap>
+<!-- 메뉴 주문시 각각 요청이 와야하는데 해당 쿼리 활용시 한번에 가능 (동적쿼리 활용 select 한번만 날림)
+   속도 향상! 어필 가능  -->
+    <select id="selelctMenuByMenuCodes" parameterType="hashmap" resultMap="menuResultMap">
+        SELECT
+              A.MENU_CODE
+            , A.MENU_NAME
+            , A.MENU_PRICE
+            , A.CATEGORY_CODE
+            , A.ORDERABLE_STATUS
+          FROM TBL_MENU A
+        WHERE MENU_CODE IN
+<!--       사용자가 몇번 메뉴를 몇개, 몇번 주문할지 모르기 때문에 동적 쿼리를 사용해야 한다.  -->
+        <foreach collection="menuCodes" item="menuCode" open="(" close=")" separator=", ">
+<!--            collection -> map의 키값, item : 각 요소 하나하나를 의미 -->
+            #{menuCode}
+        </foreach>
+
+    </select>
+
+</mapper>
