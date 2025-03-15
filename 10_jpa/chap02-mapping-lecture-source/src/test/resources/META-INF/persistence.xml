@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 엔티티 메니저 이름 설정 -->
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+
+    <persistence-unit name="jpatest">
+<!--        설명. 엔티티는 설정에 따로 추가할 예정./ 쿼리가 될 친구 => 엔티티 (jpa에서는!)-->
+<!--        <class>com.ohgiraffers.section01.entity.Member</class>-->
+<!--        <class>com.ohgiraffers.section02.column.Member</class>-->
+<!--        <class>com.ohgiraffers.section03.primarykey.subsection01.identity.Member</class>-->
+<!--        <class>com.ohgiraffers.section03.primarykey.subsection02.table.Member</class>-->
+<!--        <class>com.ohgiraffers.section04.enumtype.Member</class>-->
+            <class>com.ohgiraffers.section05.compositekey.subsection01.embedded.Member</class>
+            <class>com.ohgiraffers.section05.compositekey.subsection02.idclass.Member</class>
+
+
+
+        <properties>
+<!--            설명, 데이터베이스 연결 정보 -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jdbcdb"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="mariadb"/>
+
+<!--            설명. hibernate 설정(실행되는 sql구문을 format 형태로 보여주기)-->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+
+<!--            설명. auto ddl설정
+                create : 애플리케이션 실행 시 기존 테이블이 있다면 drop, 그리고 항상 create table wlsgod
+                create-drop: 애플리케이션 실행 시 항상 create table 진행, 종료시 drop
+                update: 애플리케이션 실행 시 기존 테이블이 없다면 create table, 있다면 컬럼이 추가될 때만 alter
+                **Jpa로만 만들 때 사용 가능하나 전체적으로 혼용해서 쓰는게 좋음으로 사용을 권장하지 않음 -->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+<!--          create : 어플리케이션을 틀면 기존 테이블 밀고 다시 새로 테이블 만드는 것, 어플리케이션이 종료되면 사라짐?
+              create-drop : 업데이트 발생시 수정 가능(기존 업데이트문 수정은 안되고 새로운 것을 alt할 있음
+              update-->
+        </properties>
+    </persistence-unit>
+
+</persistence>
