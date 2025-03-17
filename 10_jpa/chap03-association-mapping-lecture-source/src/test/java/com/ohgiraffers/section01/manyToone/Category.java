@@ -13,8 +13,8 @@ public class Category {
     @Column(name = "category_code")
     private int categoryCode;
 
-    // 자바클래스에서 Null을 넣고 싶으면 래퍼클래스 형태로 해줘야함(notnull제약조건을 걸 수 없는 경우 참조자료형으로 작성)
-//    private int refCategoryCode;
+    // 자바클래스에서 Null을 넣고 싶으면 래퍼클래스 형태로 해줘야함 (not null 제약조건을 걸 수 없는 경우 참조자료형으로 작성)
+    // private int refCategoryCode;
 
     @Column(name = "category_name")
     private String categoryName;
@@ -24,7 +24,6 @@ public class Category {
     private Integer refCategoryCode;
 
     public Category() {
-
     }
 
     public Category(int categoryCode, int refCategoryCode, String categoryName, Integer refCategoryCode1) {
