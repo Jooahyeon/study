@@ -41,7 +41,6 @@ public class SimpleJPQLTest {
         TypedQuery<String> query = entityManager.createQuery(jpql, String.class);           // 순수 jpa
         String resultMenuName = query.getSingleResult();                                    // 단일행 단일열 조회니 string
         System.out.println("resultMenuName = " + resultMenuName);
-
     }
 
     // 타입 지정 안하고
@@ -71,7 +70,6 @@ public class SimpleJPQLTest {
 //
 //        Assertions.assertTrue(resultRow[0] instanceof String);
 //        Assertions.assertTrue(resultRow[0] instanceof Integer);
-
     }
 
     // 1차 캐시로 관리되는 , 모든 컬럼으로 조회해 (다중행 단일열, 단일행 다중열 조회일 시 사용하는게 좋음)
@@ -105,7 +103,6 @@ public class SimpleJPQLTest {
 
         menuList.forEach(System.out::println);
         Assertions.assertTrue((!menuList.isEmpty()));
-
     }
 
     @Test
@@ -117,6 +114,4 @@ public class SimpleJPQLTest {
         Assertions.assertTrue((!menuList.isEmpty()));
 
     }
-
-
 }

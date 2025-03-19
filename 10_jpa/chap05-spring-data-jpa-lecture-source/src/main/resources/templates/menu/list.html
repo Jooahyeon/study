@@ -27,13 +27,13 @@
 
 <!--		&lt;!&ndash; @{}는 자동으로 URL 파라미터를 인코딩하는 동적 URL 생성 부분(한글깨짐 방지 및 동적으로 변수 활용한 URL 생성) &ndash;&gt;-->
 		<!-- 맨 앞으로 이동 -->
-		<button th:onclick="'location.href=\'/menu/list?page=' + @{${paging.startPage}} + '\''"><<</button>
+<!--		<button th:onclick="'location.href=\'/menu/list?page=' + @{${paging.startPage}} + '\''"><<</button>-->
 
-<!--		&lt;!&ndash; 이전 페이지로 이동 &ndash;&gt;-->
-		<button th:onclick="'location.href=\'/menu/list?page=' + @{${paging.currentPage - 1}} + '\''"
-				th:disabled="${ menuList.first }"><</button>
+<!--&lt;!&ndash;		&lt;!&ndash; 이전 페이지로 이동 &ndash;&gt;&ndash;&gt;-->
+<!--		<button th:onclick="'location.href=\'/menu/list?page=' + @{${paging.currentPage - 1}} + '\''"-->
+<!--				th:disabled="${ menuList.first }"><</button>-->
 
-<!--		&lt;!&ndash; 숫자 버튼 &ndash;&gt;-->
+<!--&lt;!&ndash;		&lt;!&ndash; 숫자 버튼 &ndash;&gt;&ndash;&gt;-->
 		<th:block th:each="page : ${ #numbers.sequence(paging.startPage, paging.endPage)}">
 			<button th:onclick="'location.href=\'/menu/list?page=' + @{${page}} + '\''"
 					th:text="${ page }"

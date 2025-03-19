@@ -7,7 +7,8 @@
 <body>
 
 	<h1>신규 메뉴 등록</h1>
-	
+
+
 	<form action="/menu/regist" method="post">
 		<label>메뉴 이름 : </label><input type="text" name="menuName"><br>
 		<label>메뉴 가격 : </label><input type="number" name="menuPrice"><br>
@@ -26,7 +27,7 @@
 	</form>
 
 	<script>
-		fetch('/menu/category')
+		fetch('/menu/category'), {method }
 				.then(res => res.json())
 				.then(data => {
 					const $categoryCode = document.getElementById('categoryCode');
